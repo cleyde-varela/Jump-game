@@ -1,0 +1,135 @@
+* {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 80%;
+    height: 500px;
+    border-bottom: 20px solid #9E5D0A;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; /* if it goes beyond screen limits hide */
+    background: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+h4 {
+    color:#58AED1;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.btn {
+    text-align: center;
+}
+
+/* Code from W3Schools */
+.button {
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+  }
+
+.rock {
+    width: 90px;
+    position: absolute;
+    bottom: -27px;
+    animation: rock-animation 4.5s infinite linear; /* inserts animation code + duration + type of "scroll" */
+}
+
+.cloud {
+    width: 160px;
+    position: absolute;
+    top: 10px;
+    animation: cloud-animation 22s infinite linear;
+}
+
+.cloud-second {
+    width: 110px;
+    position: absolute;
+    top: 60px;
+    animation: second-cloud-animation 26s infinite linear;
+}
+
+.girl {
+    width: 90px;
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+}
+
+.jump {
+    animation: girl-jump-animation 1s ease-out;
+}
+
+/* Rock movement code */
+@keyframes rock-animation {
+    from{
+        right: -100px; /* -80px so the rock appears to be entering the screen */
+    }
+    to {
+        right: 100%;
+    }
+}
+
+/* Cloud movement code */
+@keyframes cloud-animation {
+    from {
+        right: -160px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+/* Second cloud movement code */
+@keyframes second-cloud-animation {
+    from {
+        right: -90px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+/* Girl jummp code */
+@keyframes girl-jump-animation {
+    /* % are the duration of the animation */
+    0% {
+        bottom: -10px; 
+    }
+
+    40% {
+        bottom: 100px;
+    }
+
+    50% {
+        bottom: 100px;
+    }
+
+    60% {
+        bottom: 100px;
+    }
+
+    100% {
+        bottom: -10px;
+    }
+}

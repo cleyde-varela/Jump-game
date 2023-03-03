@@ -1,0 +1,2 @@
+Developed by Cleyde Varela by following the tutorial at https://www.youtube.com/watch?v=r9buAwVBDhA&list=PLeXXJg5jfu7xzPwnu3Sc3LgzeVQtmfWQm&index=25&t=123s by Manual do Developed
+Images by https://www.freepik.com/free-vector/hand-drawn-animation-frames-element-collection_33591464.htm
