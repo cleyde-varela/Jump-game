@@ -1,3 +1,5 @@
+# Jump Game
+
 ## 📌 About this project
 * It's a simple game developed using HTML, CSS and Js.
 * It was built following the amazing tutorial at https://www.youtube.com/watch?v=r9buAwVBDhA&list=PLeXXJg5jfu7xzPwnu3Sc3LgzeVQtmfWQm&index=25&t=123s by **Manual do Developer**
